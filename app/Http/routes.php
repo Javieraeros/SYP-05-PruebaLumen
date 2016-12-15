@@ -1,5 +1,4 @@
 <?php
-use Illuminate\Http\Response;
 /*
 |--------------------------------------------------------------------------
 | Application Routes
@@ -11,8 +10,10 @@ use Illuminate\Http\Response;
 |
 */
 
+use Illuminate\Database;
 $app->get('/', function () use ($app) {
-    return $app->version();
+    $objeto = app('db')->select("Select * from Mamasajistas");
+    return response()->json($objeto,201);
 });
 
 $app->get('prueba',function(){
