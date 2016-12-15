@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="2e28d836-9561-408a-aa6c-8042f1aa2028" name="PruebaLumen" url="http://localhost">
+        <fileTransfer port="0" mountedRoot="/var/www/html/SYP-05-PruebaLumen" accessType="MOUNT" />
+      </webServer>
+    </option>
+  </component>
+</project>
